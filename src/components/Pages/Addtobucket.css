@@ -1,0 +1,133 @@
+
+.bucket-list {
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bucket-item {
+    display: flex;
+    flex-wrap: wrap;
+    width: 49%;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFDAB9; /* Orangy background for bucket items */
+    height: 250px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.bucket-item img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.bucket-item button {
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #FF6347; /* Orangy button */
+    color: white;
+    border: none;
+}
+
+.bucket-item h3,
+.bucket-item p,
+.bucket-item button {
+    margin: 10px 90px;
+    font-size: 19px;
+}
+
+.bucket-item h3 {
+    font-size: 29px;
+}
+
+.total-price button {
+    width: 200px;
+    margin: 20px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #FF4500; /* Orangy button */
+    color: white;
+    border: none;
+}
+
+.total-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 1358px) {
+    .bucket-item {
+        width: 90%;
+    }
+    .bucket-item h3,
+    .bucket-item p,
+    .bucket-item button {
+        margin: 10px 40px;
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .bucket-item {
+        width: 96%;
+        height: 200px;
+    }
+    .bucket-item img {
+        height: 100px;
+        width: 100px;
+        border-radius: 15px;
+    }
+    .bucket-item button {
+        width: 150px;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #FF6347; /* Orangy button */
+        color: white;
+        border: none;
+    }
+    .bucket-item h3,
+    .bucket-item p,
+    .bucket-item button {
+        margin: 10px 20px;
+        font-size: 15px;
+    }
+    .bucket-item h3 {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .bucket-list {
+        margin: 0px 0px;
+    }
+    .bucket-item {
+        height: 150px;
+        width: 100%;
+        margin: 3px;
+
+    }
+    .bucket-item img {
+        height: 120px;
+        width: 120px;
+    }
+    .bucket-item h3,
+    .bucket-item p,
+    .bucket-item button {
+        margin: 4px 17px;
+        font-size: 13px;
+    }
+    .bucket-item button {
+        width: 120px;
+        font-size: 10px;
+    }
+    .total-price{
+        margin-top: 30px;
+    }
+}

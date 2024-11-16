@@ -1,0 +1,60 @@
+/* Navbar Styling */
+.custom-navbar {
+    background-color: #FF6F00; /* Bright orange background color */
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar-brand h1 {
+    font-size: 2em;
+    color: #FFFFFF; /* White color for the brand title */
+    font-family: 'Arial Black', sans-serif; /* Bold, modern font */
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* All caps for a strong presence */
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF !important; /* White text for links */
+    font-size: 1.1em;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transitions */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: #FFD54F; /* Light orange hover and active background */
+    color: #FF6F00 !important; /* Orange text color on hover/active */
+}
+
+.custom-logout-btn {
+    background-color: #FFFFFF; /* White background for the button */
+    color: #FF6F00; /* Orange text color */
+    border: 2px solid #FFFFFF; /* White border */
+    padding: 5px 20px;
+    border-radius: 25px; /* Rounded button for a modern look */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.custom-logout-btn:hover {
+    background-color: #FF6F00; /* Orange background on hover */
+    color: #FFFFFF; /* White text on hover */
+    border-color: #FFD54F; /* Light orange border on hover */
+}
+
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar-brand h1 {
+        font-size: 1.5em;
+    }
+    .navbar-nav .nav-link {
+        font-size: 1em;
+        margin: 5px 0;
+    }
+    .custom-logout-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

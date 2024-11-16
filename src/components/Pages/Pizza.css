@@ -1,0 +1,86 @@
+body{
+  background-color: #FFCC99; /* Orangy background */
+}
+.pizza-list,
+.dessert-list,
+.combo-pack-list,
+.drink-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5px;
+    padding: 20px;
+    gap: 20px; /* Reduced for smaller screens */
+    background-color: #f7cb9f; /* Orangy background */
+}
+
+.pizza-card,
+.dessert-card,
+.combo-pack-card,
+.drink-card {
+  background-color: #FFDAB9; /* Lighter orangy color for the cards */
+    border-radius: 10px;
+    height: 520px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%; /* Full width for smaller screens */
+    max-width: 300px; /* Limits width on larger screens */
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.pizza-card img,
+.dessert-card img,
+.combo-pack-card img,
+.drink-card img{
+  width: 100%;
+  height: 45%;
+}
+
+.pizza-title,
+.dessert-title,
+.combo-pack-title,
+.drink-title {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333; /* Keeping text dark for contrast */
+}
+
+.pizza-description,
+.dessert-description,
+.combo-description,
+.drink-description {
+    font-size: 1em;
+    margin: 0 15px 15px;
+    color: #555; /* Slightly darker text for readability */
+}
+
+.pizza-price,
+.dessert-price,
+.combo-price,
+.drink-price {
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E67E22; /* Orangy color for prices */
+    font-weight: bolder;
+}
+
+.add-to-bucket-btn {
+    background-color: #FF5733; /* Bright orangy button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%; /* Ensures the button takes up the full width of the card */
+    max-width: 280px; /* Limits the width to fit within the card padding */
+    margin: 10px auto; /* Centers the button horizontally */
+    display: block; /* Makes sure the button behaves as a block element */
+}
+
+.add-to-bucket-btn:hover {
+    background-color: #FF4500; /* Darker orangy on hover */
+}
